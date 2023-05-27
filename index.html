@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="280849678280-49a69fmkjs5lh4kh0tthidajg75pkc4p.apps.googleusercontent.com">
+    <title>Google LogIn</title>
+    
+</head>
+<body>
+    <h2>Sign in With Google Login</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <div class="data">
+        <p>Name</p>
+        <p id="name"></p>
+        <p>Profile Pic</p>
+        <p>Email</p>
+        <p id="email"></p>
+        <button type="button" onclick="signOut();">Sign Out</button>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
